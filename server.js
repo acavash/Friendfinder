@@ -20,8 +20,8 @@ app.use(express.static('app/public'));
 
 // Router Controllers
 // the below require statements point our server to the route files that tell our server how to respond when visitors request data from our URLs
-require('./app/routing/api-routes.js')(app);
-require('./app/routing/html-routes.js')(app);
+require('./app/routing/apiRoutes.js')(app);
+require('./app/routing/htmlRoutes.js')(app);
 
 // Listener: This will start our server
 app.listen(PORT, function() {
